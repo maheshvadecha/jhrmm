@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from 'react';
+import Header from './Header';
 
 const Home = () => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  )
-}
+	return ( 
+		<div className='bg-black-russian  min-h-screen'>
+			<Header />
+		</div>
+	);
+};
 
-export default Home
+export default Home;

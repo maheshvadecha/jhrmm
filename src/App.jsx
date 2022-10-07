@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import Services from "./components/Services";
-import Skills from "./components/Skills";
+import Teams from "./components/Teams";
 import Technology from "./components/Technology";
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
             element={<Services />} 
           />
           <Route 
-            path="skills" 
-            element={<Skills />} 
+            path="team" 
+            element={<Teams />} 
           />
           <Route 
             path="project" 
