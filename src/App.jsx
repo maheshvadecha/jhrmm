@@ -1,6 +1,7 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import Services from "./components/Services";
@@ -9,7 +10,10 @@ import Technology from "./components/Technology";
 
 function App() {
   return (
-    <div>
+    <div  className='bg-black-russian  min-h-screen'>
+      <BrowserRouter>
+    <Header />
+      <div className="text-cyan-300">
         <Routes>
           <Route 
             path="/"
@@ -40,6 +44,8 @@ function App() {
             element={<Technology />} 
           />
         </Routes>
+    </div>
+    </BrowserRouter>
     </div>
   );
 }
